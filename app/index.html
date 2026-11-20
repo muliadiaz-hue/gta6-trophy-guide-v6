@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum — GTA 6 Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+      <h1>Leonida Platinum</h1>
+      <p class="tagline">Every trophy, its guide, its sources — and the road to platinum, in one offline tracker.</p>
+    </div>
+    <div class="scorebox" aria-label="Progress">
+      <p class="bigcount"><span id="earnedCount">0</span> / 55</p>
+      <div class="bar" role="progressbar" aria-label="Trophies earned"><div id="barFill" class="bar-fill"></div></div>
+      <p class="subcount"><span id="platinumPct">0%</span> to platinum &middot; <span id="pointsLine">0 of 1,000 Gamerscore pace</span></p>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <button type="button" class="tab active" data-view="checklist">Checklist</button>
+    <button type="button" class="tab" data-view="roadmap">Roadmap</button>
+    <button type="button" class="tab" data-view="missables">Missables</button>
+    <button type="button" class="tab" data-view="progress">Progress &amp; Settings</button>
+  </nav>
+</header>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div class="filterbar">
+      <label class="search">Search <input id="searchBox" type="search" placeholder="Trophy name or description…" autocomplete="off"></label>
+      <label>Kind
+        <select id="kindFilter">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectible">Collectibles</option>
+          <option value="activity">Activities</option>
+          <option value="robbery">Robbery</option>
+          <option value="side-story">Side stories</option>
+          <option value="misc">Misc</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Status
+        <select id="statusFilter">
+          <option value="all">All</option>
+          <option value="earned">Earned</option>
+          <option value="remaining">Remaining</option>
+        </select>
+      </label>
+      <label class="spoiler-toggle"><input id="spoilerToggle" type="checkbox" checked> Hide story spoilers</label>
+      <p id="resultCount" class="result-count"></p>
+    </div>
+    <div class="split">
+      <div class="list-col">
+        <ol id="trophyList" class="trophy-list"></ol>
+        <p id="emptyNote" class="empty-note" hidden>No trophies match these filters. Loosen the search or pick another kind.</p>
+        <p id="onlineNote" class="fineprint">No online trophies in this list — every trophy is earned in single-player.</p>
+      </div>
+      <aside id="guidePane" class="guide-pane" aria-label="Trophy guide"></aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <div id="nextUp" class="nextup"></div>
+    <div id="roadmapStages" class="stages"></div>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <h2>Missables &amp; time-sensitive trophies</h2>
+    <p class="lede">There is no mission replay and no New Game Plus at launch, so save discipline matters — but only one trophy is a confirmed missable risk. Everything else stays available after the credits.</p>
+    <div id="missableCards" class="cards"></div>
+    <h3>Save discipline that covers both</h3>
+    <ul class="advice">
+      <li>Keep a manual save at the start of every chapter — 15 manual slots plus 1 autosave.</li>
+      <li>Keep one untouched save from just before the final mission.</li>
+      <li>Cheats switch off trophies and saving — keep them off on your trophy save.</li>
+      <li>All six side-story finales and the whole 100% checklist stay open after the credits.</li>
+    </ul>
+  </section>
+
+  <section id="view-progress" class="view" hidden>
+    <h2>Progress &amp; settings</h2>
+    <div id="progressCounters" class="counters"></div>
+    <h3>Your save</h3>
+    <p>Progress lives in this browser only (local storage). Export a backup before clearing browser data.</p>
+    <div class="save-row">
+      <button id="exportBtn" type="button">Export progress (JSON)</button>
+      <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json"></label>
+      <button id="resetBtn" type="button" class="danger">Reset all progress</button>
+    </div>
+    <p id="importReport" class="report" role="status"></p>
+    <h3>About this guide</h3>
+    <p class="fineprint">Names, descriptions and grades are the official PS5 list as mirrored by Exophase and PSNProfiles; PSN progress counts come from PSNProfiles; methods and missable analysis from Output Lag, Press-Start, HowToVideoGame and CryptoGames. Rockstar, Sony and Microsoft have published no separate official list page — the PS5 trophy list itself is the source. Guides are written in our own words; every trophy names its sources. This guide works fully offline and fetches nothing.</p>
+    <p class="fineprint">Not affiliated with Rockstar Games, Sony or PlayStation. No logos or official artwork are used.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Platinum — a fan-made tracker for GTA 6 on PS5. 55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze. 28 hidden, 12 story, 0 online.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
